@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="mybeans.MyBean" id="first"></bean>
+	
+	<bean class="mybeans.MyLogic" id="second">
+		<constructor-arg ref="first"></constructor-arg>
+	</bean>
+	<!-- 프로토 타입은 항상 새로운 인스턴스를 만들어서 준다. 그 대신 IOC관리대상에서는 사라진다. -->
+	<bean class="mybeans.MyStatefulObj" id="third" scope="prototype">
+	<!-- 생성자의 파라미터 순서대로 (생성자를 통한 주입)-->
+		<constructor-arg value="my-name"></constructor-arg>
+		<constructor-arg value="100"></constructor-arg>
+	</bean>
+	
+	<!-- primary : 주요 bean으로 설정하기 -->
+	<bean class="mybeans.MyStatefulObj" id="fourth" scope="prototype" primary="true">
+	<!-- setter를 통한 주입 -->
+		<property name="name" value="bysetter"></property>
+		<property name="number" value="400"></property>
+	</bean>
+</beans>
