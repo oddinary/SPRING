@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>입력한 텍스트 보는 창</title>
+<title>입력값 그대로 출력</title>
 </head>
 <body>
-	<h1>입력한 값을 확인해 보자구욧.</h1>
-	<p>${ print }</p>
+	<p>${ text }</p>
 </body>
 </html>

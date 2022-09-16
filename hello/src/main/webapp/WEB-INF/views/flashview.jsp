@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>유저 목록</title>
+<title>Insert title here</title>
 </head>
 <body>
-<p>${ list }</p>
+	<p>포워드 : ${ fowardtest }</p>
+	<p>리다이렉트 : ${ redirecttest }</p>
+	<p>파람 : ${ param.redirecttest }</p>
 </body>
 </html>

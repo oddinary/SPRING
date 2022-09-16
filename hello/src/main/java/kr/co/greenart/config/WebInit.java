@@ -21,14 +21,16 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
 		return new String[] { "/" };
 	}
 
-//	인코딩 필터 만들기.
 	@Override
 	protected Filter[] getServletFilters() {
-//		Spring에서 만들어 놓은 인코딩 필터 사용
 		CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
 		encodingFilter.setEncoding("UTF-8");
 		encodingFilter.setForceEncoding(true);
 		return new Filter[] { encodingFilter };
 	}
-	
 }
+
+
+
+
+

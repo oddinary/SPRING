@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>유저 목록</title>
+<title>Insert title here</title>
 </head>
 <body>
-<p>${ list }</p>
+	<form method="post" enctype="multipart/form-data">
+		<input type="file" name="upload">
+		<input type="submit">
+	</form>
 </body>
 </html>

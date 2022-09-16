@@ -8,6 +8,5 @@
 </head>
 <body>
 	<h1>Hello World!</h1>
-	<p>더워요.</p>
 </body>
 </html>

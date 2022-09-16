@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>유저 목록</title>
+<title>Insert title here</title>
 </head>
 <body>
-<p>${ list }</p>
+	<p>${burn}</p>
 </body>
 </html>
